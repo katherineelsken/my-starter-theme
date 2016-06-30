@@ -6,6 +6,6 @@ if ( ! is_active_sidebar( 'sidebar-primary' ) ) {
 }
 ?>
 
-<aside id="secondary" class=" sidebar-primary widget-area" role="complementary">
+<aside class=" sidebar sidebar-primary widget-area one-third" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-primary' ); ?>
 </aside><!-- #secondary -->

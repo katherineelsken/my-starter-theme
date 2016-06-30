@@ -5,7 +5,7 @@
 
 	<div class="site-inner">
 	<div id="primary" class="content-sidebar-wrap">
-		<main id="content" class="content" role="main">
+		<main id="content" class="content two-thirds first" role="main">
 
 		<?php
 		if ( have_posts() ) :
@@ -39,6 +39,8 @@
 
 	</div><!-- #primary -->
 	</div> <!-- #Site inner -->
-	</div> <!-- #Site Container -->
+	
 
 <?php get_footer();?>
+
+</div> <!-- #Site Container -->

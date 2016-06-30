@@ -525,23 +525,31 @@ th:first-child {
 /* ## Column Widths and Positions
 --------------------------------------------- */
 
-
+.site-inner {
+	padding-top:40px;
+}
+.content-sidebar-wrap {
+	display:block;
+	margin: 0 auto;
+	width:1060px;
+}
 
 /* ### Content */
 
-.content {
+/*.content {
 	float: left;
-	width: 880px;
-}
+	width: 70%;
 
+}
+*/
 
 
 /* ### Primary Sidebar */
 
-.sidebar-primary {
+/*.sidebar-primary {
 	float: right;
-	width: 360px;
-}
+	width: 30%;
+}*/
 
 
 
@@ -626,31 +634,7 @@ th:first-child {
 	margin: 0 16px 24px 0;
 }
 
-/* ## Genesis
---------------------------------------------- */
 
-.breadcrumb {
-	background-color: #fff;
-	font-size: 16px;
-	font-size: 1.6rem;
-	margin-bottom: 1px;
-	padding: 12px 30px;
-}
-
-.after-entry,
-.archive-description,
-.author-box {
-	background-color: #fff;
-	font-size: 18px;
-	font-size: 1.8rem;
-	margin-bottom: 40px;
-	padding: 60px;
-}
-
-.archive-description p:last-child,
-.author-box p:last-child {
-	margin-bottom: 0;
-}
 
 /* ## Search Form
 --------------------------------------------- */
