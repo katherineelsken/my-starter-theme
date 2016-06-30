@@ -58,6 +58,8 @@ add_action( 'widgets_init', 'kats_starter_theme_widgets_init' );
 function kats_starter_theme_scripts() {
 	
 	wp_enqueue_style( 'kats_starter_theme-style', get_stylesheet_uri() );
+
+	wp_enqueue_style('main-css',get_template_directory_uri() . '/assets/css/main.css');
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -66,5 +68,6 @@ function kats_starter_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'kats_starter_theme_scripts' );
 
 
+//*Template Tags
 require get_template_directory() . '/inc/template-tags.php';
 
