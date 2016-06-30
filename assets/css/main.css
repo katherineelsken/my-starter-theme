@@ -852,7 +852,7 @@ th:first-child {
 .content-sidebar-wrap {
   display: block;
   margin: 0 auto;
-  width: 1200px; }
+  width: 1240px; }
 
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
@@ -935,6 +935,9 @@ p.entry-meta {
 
 /* ## Comments
 --------------------------------------------- */
+.comments {
+  padding: 70px 70px; }
+
 .comment-respond,
 .entry-comments,
 .entry-pings {
