@@ -4,8 +4,9 @@
 <?php get_header(); ?>
 
 	<div class="site-inner">
-	<div id="primary" class="content-sidebar-wrap">
-		<main id="content" class="content two-thirds first" role="main">
+	<div id="primary" class="max-width-9 mx-auto">
+		<div class="clearfix">
+		<main id="content" class="content sm-col sm-col-8 p4" role="main">
 
 		<?php
 		if ( have_posts() ) :
@@ -36,7 +37,7 @@
 
 		</main><!-- #main -->
 		<?php get_sidebar();?>
-
+	</div><!-- Clearfix -->
 	</div><!-- #primary -->
 	</div> <!-- #Site inner -->
 	

@@ -2,8 +2,8 @@
 <?php get_header(); ?>
 
 	<div class="site-inner">
-	<div id="primary" class="content-sidebar-wrap">
-		<main id="content" class="content two-thirds first" role="main">
+	<div id="primary" class="max-width-9 mx-auto">
+		<main id="content" class="content sm-col sm-col-8 p4" role="main">
 
 
 		<?php

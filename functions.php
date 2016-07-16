@@ -35,7 +35,27 @@ if ( ! function_exists( 'kats_starter_theme_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'kats_starter_theme_setup' );
 
+//* Woocommerce Support 
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
 
+
+//* Hook Woocommerce into the theme
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+add_action('woocommerce_before_main_content', 'kats_starter_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'kats_starter_theme_wrapper_end', 10);
+
+function kats_starter_theme_wrapper_start() {
+  echo '<div class="max-width-9 mx-auto"><div class="content sm-col sm-col-8 p4">';
+}
+
+function kats_starter_theme_wrapper_end() {
+  echo '</div></div>';
+}
 //* Widgets
 
 function kats_starter_theme_widgets_init() {
@@ -57,6 +77,8 @@ add_action( 'widgets_init', 'kats_starter_theme_widgets_init' );
 function kats_starter_theme_scripts() {
 	
 	wp_enqueue_style( 'kats_starter_theme-style', get_stylesheet_uri() );
+
+	wp_enqueue_style('basscss-css',get_template_directory_uri() . '/assets/css/basscss.min.css');
 
 	wp_enqueue_style('main-css',get_template_directory_uri() . '/assets/css/main.css');
 
